@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Erhebung zum Lernband – Bögen für Schüler:innen, Eltern und Kollegium">
+<title>Erfahrungen mit dem Lernband – Erhebung zum Schulentwicklungstag</title>
+<style>
+:root{--blue:#009EE3;--dark:#00567f;--soft:#e6f5fc;--line:#7cc4e8;--ink:#000}
+*{box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+html{scroll-padding-top:60px}
+body{margin:0;font-family:'Open Sans','Segoe UI',Arial,sans-serif;font-size:9.6pt;line-height:1.36;color:var(--ink);background:#d9e3e9}
+.bar{position:sticky;top:0;z-index:5;background:var(--dark);color:#fff;padding:8px 14px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:10pt}
+.bar b{margin-right:6px}
+.bar button,.bar a{background:#fff;color:var(--dark);border:0;border-radius:6px;padding:6px 11px;font:inherit;font-weight:700;cursor:pointer;text-decoration:none}
+.bar button:hover,.bar a:hover,.bar button:focus-visible,.bar a:focus-visible{outline:3px solid #ffd54a}
+.sheet{position:relative;width:210mm;min-height:297mm;margin:12px auto;background:#fff;padding:10mm 11mm 12mm;box-shadow:0 2px 12px rgba(0,0,0,.22);page-break-after:always;break-after:page}
+.hd{display:flex;justify-content:space-between;align-items:flex-end;gap:8mm;border-bottom:2pt solid var(--blue);padding-bottom:2mm;margin-bottom:3.5mm}
+.school{font-size:8.5pt;font-weight:700;color:var(--dark)}
+.ti{font-size:17pt;font-weight:800;line-height:1.12;color:var(--dark)}
+.who{font-size:9pt;text-align:right;white-space:nowrap}
+.who b{display:block;font-size:11pt;color:var(--dark)}
+h2{margin:4mm 0 1.6mm;padding:1.1mm 3mm;background:var(--soft);border-left:2.5mm solid var(--blue);border-radius:0 2mm 2mm 0;color:var(--dark);font-size:10.8pt}
+p{margin:0 0 2mm}
+.lead{font-size:9.6pt;margin-bottom:2.5mm}
+.ang{display:flex;flex-wrap:wrap;gap:1.5mm 4mm;align-items:center;margin:1.5mm 0;font-size:9.4pt}
+.ang>span:first-child{font-weight:700;margin-right:1mm}.ang.long>span:first-child{flex:0 0 100%;margin-bottom:.4mm}
+label.cb{display:inline-flex;align-items:center;gap:1.6mm;cursor:pointer}
+input[type=radio],input[type=checkbox]{appearance:none;-webkit-appearance:none;flex:0 0 auto;width:4.6mm;height:4.6mm;margin:0;border:1pt solid #000;border-radius:.7mm;background:#fff;cursor:pointer;vertical-align:middle}
+input[type=radio]:checked,input[type=checkbox]:checked{background:#000;box-shadow:inset 0 0 0 1.05mm #fff}
+input:focus-visible,textarea:focus-visible{outline:3px solid #ffd54a;outline-offset:1px}
+table{width:100%;border-collapse:collapse}
+table.sk{table-layout:fixed}
+table.sk th{font-size:7.8pt;font-weight:600;line-height:1.2;padding:1.2mm .3mm;border:.7pt solid #000;background:#f2f8fc;overflow-wrap:anywhere;hyphens:auto;vertical-align:bottom}
+table.sk th.t{text-align:left;padding-left:2mm}
+table.sk th b{display:block;font-size:10pt}
+table.sk td{border:.7pt solid #000;padding:1.3mm 1.6mm;vertical-align:middle;text-align:center}
+table.sk td.t{text-align:left;font-size:9.3pt}
+table.sk col.c{width:19mm}
+.id{display:inline-block;min-width:6.5mm;margin-right:1.4mm;font-size:7.5pt;font-weight:700;color:#555}
+.fr{margin-bottom:3.4mm;break-inside:avoid}
+.q{font-weight:700;margin-bottom:.8mm}
+textarea{display:block;width:100%;border:0;padding:0;margin:0;font:inherit;line-height:9mm;resize:none;overflow:hidden;background-image:linear-gradient(to bottom,transparent calc(9mm - .3mm),#444 calc(9mm - .3mm));background-size:100% 9mm;background-repeat:repeat-y;background-color:transparent;color:#000}
+.ft{position:absolute;left:11mm;right:11mm;bottom:5mm;display:flex;justify-content:space-between;font-size:7.6pt;color:#444;border-top:.6pt solid var(--line);padding-top:1mm}
+.box{border:.8pt solid var(--line);background:#f6fbfe;border-radius:2mm;padding:2mm 4mm;margin-bottom:2.4mm}
+.box ul{margin:.6mm 0;padding-left:5mm}.box li{margin:.5mm 0}
+.tag{display:inline-block;border:.8pt solid #b45309;color:#b45309;border-radius:1.4mm;padding:0 2mm;font-size:8pt;font-weight:700;margin-left:2mm;vertical-align:middle}
+table.plan th{background:var(--blue);color:#fff;text-align:left;font-size:8.6pt;padding:1.2mm 2mm;border:.6pt solid var(--line)}
+table.plan td{border:.6pt solid var(--line);padding:1.4mm 2mm;vertical-align:top;font-size:9pt}
+table.plan input[type=text]{width:100%;border:0;border-bottom:.6pt solid #555;font:inherit;padding:.5mm 0;background:transparent}
+table.ev th{background:var(--blue);color:#fff;font-size:8pt;padding:1mm 1.2mm;border:.6pt solid var(--line);text-align:center}
+table.ev th.t{text-align:left}
+table.ev td{border:.6pt solid var(--line);padding:.5mm 1mm;font-size:8.6pt;vertical-align:middle;text-align:center}
+table.ev td.t{text-align:left}
+table.ev thead tr th:nth-last-child(-n+2){width:12mm}table.ev td.m{font-weight:700}
+table.ev input[type=number]{width:11mm;border:0;border-bottom:.5pt solid #555;font:inherit;text-align:center;padding:.3mm 0;background:transparent;-moz-appearance:textfield}
+table.ev input[type=text]{width:100%;border:0;border-bottom:.5pt solid #555;font:inherit;background:transparent}
+.g1{background:#d9f3dc}.g2{background:#eaf6c9}.g3{background:#fff5c2}.g4{background:#ffe0b8}.g5{background:#fde0e0}
+.sm{font-size:7.4pt;color:#444}
+.note{font-size:8.6pt;color:#333}
+@media (max-width:820px){.sheet{width:auto;margin:8px;padding:8mm 5mm}.who{white-space:normal}table.sk col.c{width:11mm}}
+@page{size:A4;margin:0}
+@media print{
+  body{background:#fff}.bar{display:none}
+  .sheet{margin:0;box-shadow:none;width:210mm;height:297mm;min-height:0;overflow:hidden}
+  body[data-only] .sec{display:none}
+  body[data-only="cover"] .sec[data-sec="cover"],body[data-only="s"] .sec[data-sec="s"],body[data-only="e"] .sec[data-sec="e"],body[data-only="l"] .sec[data-sec="l"],body[data-only="a"] .sec[data-sec="a"]{display:block}
+}
+
+.sub,.live{width:210mm;max-width:100%;margin:12px auto;background:#fff;padding:5mm 11mm 6mm;box-shadow:0 2px 12px rgba(0,0,0,.22)}
+.sub{border-top:3pt solid var(--blue)}
+.sub input[type=text],.live input[type=email],.live input[type=password],.live select{font:inherit;border:1pt solid #555;border-radius:1mm;padding:1.2mm 2mm;margin:0 2mm 1mm 0}
+.sub button,.live button{background:var(--dark);color:#fff;border:0;border-radius:6px;padding:7px 14px;font:inherit;font-weight:700;cursor:pointer}
+.sub button:disabled{opacity:.5;cursor:default}
+.msg{margin-left:3mm;font-weight:700}.msg.ok{color:#14703a}.msg.err{color:#b42318}
+.live ul{margin:.5mm 0 2mm;padding-left:5mm}.live li{margin:.6mm 0}.live table.ev td.t,.live table.ev th.t{font-size:8.8pt}
+.live .opt{margin:0 0 1.4mm;font-size:9pt}
+@media print{.sub,.live,.sec[data-sec="live"]{display:none!important}}
+@media (max-width:820px){.sub,.live{padding:5mm}}
+</style>
+</head>
+<body>
+<div class="bar" role="navigation" aria-label="Bereiche">
+  <b>Erhebung Lernband</b>
+  <a href="#cover">Auftrag &amp; Ablauf</a><a href="#s">Schüler:innen</a><a href="#e">Eltern</a><a href="#l">Kollegium</a><a href="#a">Auswertung</a><a href="#live">Live-Auswertung</a>
+  <span style="flex:1"></span>
+  <button onclick="printOnly('')">Alles drucken</button>
+  <button onclick="printOnly('s')">Nur Schülerbogen</button>
+  <button onclick="printOnly('e')">Nur Elternbogen</button>
+  <button onclick="printOnly('l')">Nur Kollegiumsbogen</button>
+  <button onclick="clearForms()">Bögen leeren</button>
+</div>
+<main id="doc"></main>
+
+<script>
+/* ---------- Inhalte ---------- */
+var SKALA=[['trifft voll zu',1],['trifft eher zu',2],['trifft eher nicht zu',3],['trifft nicht zu',4],['kann ich nicht beurteilen',0]];
+var KERN=[
+ ['K1','Ich weiß, welche Aufgabe ich im Lernband bearbeiten soll.','Mein Kind weiß nach eigener Aussage, welche Aufgabe es im Lernband bearbeiten soll.','Die Schüler:innen meiner Lerngruppe wissen, welche Aufgabe sie im Lernband bearbeiten sollen.'],
+ ['K2','Die Menge der Aufgaben ist im Lernband gut zu schaffen.','Die Menge der Aufgaben scheint mir für mein Kind gut zu schaffen.','Die Menge der Aufgaben ist für die Schüler:innen gut zu schaffen.'],
+ ['K3','Ich finde einen ruhigen Platz, um konzentriert zu arbeiten.','Mein Kind findet nach eigener Aussage einen ruhigen Platz zum Arbeiten.','Es gibt genügend ruhige Arbeitsplätze für konzentriertes Arbeiten.'],
+ ['K4','Die Regeln im Lernband (Orte, Freiheiten, Ablauf) sind klar und gelten für alle gleich.','Die Regeln im Lernband sind mir bekannt und erscheinen mir klar.','Die Regeln im Lernband sind klar und werden von allen Lehrkräften gleich angewendet.'],
+ ['K5','Ich weiß, an wen ich mich bei Fragen wenden kann.','Mein Kind weiß, an wen es sich bei Fragen wenden kann.','Die Schüler:innen bekommen bei Fragen zeitnah Hilfe.'],
+ ['K6','Das Lernband hilft mir beim Lernen und auf dem Weg zu meinem Abschluss.','Das Lernband hilft meinem Kind beim Lernen und auf dem Weg zum Abschluss.','Das Lernband hilft den Schüler:innen beim Lernen und auf dem Weg zum Abschluss.'],
+ ['K7','Ich kann im Lernband in meinem eigenen Tempo arbeiten.','Mein Kind kann im Lernband in seinem eigenen Tempo arbeiten.','Die Schüler:innen können im Lernband in ihrem eigenen Tempo arbeiten.'],
+ ['K8','WLAN und Geräte funktionieren zuverlässig, wenn ich sie brauche.','Die Technik (WLAN, Geräte) scheint zuverlässig zu funktionieren.','WLAN und Geräte funktionieren zuverlässig, wenn sie gebraucht werden.'],
+ ['K9','Ich fühle mich mit meiner Meinung zum Lernband gehört.','Ich fühle mich mit meiner Meinung zum Lernband gehört.','Ich fühle mich bei der Entwicklung des Lernbands beteiligt.']
+];
+var EXTRA={
+ s:[['S1','Ich verstehe, wozu wir das Lernband haben.'],['S2','Die Regelung, wer wo arbeiten darf (Lotse / Skipper / Matrose bzw. Freiheitsgrade), finde ich gerecht.'],['S3','Ich kann im Lernband auch Themen wählen, die mich interessieren.'],['S4','Ich kann gut festhalten, was ich schon geschafft habe.']],
+ e:[['E1','Ich bin über das Lernband ausreichend informiert.'],['E2','Ich weiß, was mein Kind im Lernband macht.'],['E3','Ich mache mir Sorgen, dass mein Kind durch das Lernband Stoff für den Abschluss verpasst. (Hier bedeutet 1 = große Sorge.)']],
+ l:[['L1','Ich habe ausreichend Zeit und Material, um das Lernband vorzubereiten.'],['L2','Ich habe einen guten Überblick über den Lernstand der Schüler:innen.'],['L3','Der Dokumentations- und Kontrollaufwand ist angemessen.'],['L4','Fachunterricht und Lernband sind gut aufeinander abgestimmt.'],['L5','Die Absprachen in meinem Jahrgangsteam sind klar.'],['L6','Ich kann meine Erfahrungen aus verschiedenen Jahrgängen ausreichend in die Gestaltung einbringen.']]
+};
+var GROUP={
+ s:{name:'Schüler:innen',idx:1,intro:'Das Lernband wird an unserer Schule erprobt. Damit es besser wird, brauchen wir deine ehrliche Meinung. Das dauert etwa 10 Minuten. Schreibe bitte keinen Namen auf.',
+    open:['Was hilft dir im Lernband am meisten?','Was stresst oder stört dich im Lernband am meisten?','Was sollte sich ändern? Wünsch dir etwas von der Schule.','Wie sollte Schule aussehen, damit du deinen bestmöglichen Abschluss erreichst?']},
+ e:{name:'Eltern',idx:2,intro:'Das Lernband wird an der Baltic Schule erprobt. Für die nächsten Schritte möchten wir wissen, wie Sie und Ihr Kind es erleben. Das Ausfüllen dauert etwa 10 Minuten und ist anonym. Bei mehreren Kindern nutzen Sie bitte pro Kind einen Bogen.',
+    open:['Was beobachten Sie bei Ihrem Kind im Zusammenhang mit dem Lernband (positiv wie negativ)?','Was wünschen Sie sich von der Schule?','Wie sollte die Schule Eltern in die Weiterentwicklung einbeziehen?','Was sollte die Schule auf keinen Fall ändern?']},
+ l:{name:'Kollegium',idx:3,intro:'Das Lernband wird in den Jahrgängen unterschiedlich gestaltet. Für die Entscheidungen nach dem Schulentwicklungstag brauchen wir die Erfahrungen aller, auch aus den Jahrgängen und Fächern, in denen ihr nur mitarbeitet. Das Ausfüllen dauert etwa 10 Minuten und ist anonym.',
+    open:['Was funktioniert im Lernband gut, und woran liegt das?','Was funktioniert nicht, und woran liegt das?','Welche Entscheidung brauchst du von der Schulleitung, damit du gut arbeiten kannst?','Wie sollte Schulentwicklung aussehen, die alle mitnimmt?']}
+};
+var JG=['5','6','7','8*','9','10','Oberstufe'];
+function esc(t){return String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+function chk(name,label,type){return '<label class="cb"><input type="'+(type||'checkbox')+'" name="'+name+'">'+esc(label)+'</label>'}
+function line(title,name,opts,type,extra){return '<div class="ang'+(title.length>26?' long':'')+'"><span>'+title+'</span>'+opts.map(function(o){return chk(name,o,type)}).join('')+(extra||'')+'</div>'}
+function scale(gk,rows){
+  var h='<table class="sk"><colgroup><col><col class="c"><col class="c"><col class="c"><col class="c"><col class="c"></colgroup><thead><tr><th class="t">Aussage</th>'+SKALA.map(function(s){return '<th>'+s[0]+(s[1]?'<b>'+s[1]+'</b>':'<b>&nbsp;</b>')+'</th>'}).join('')+'</tr></thead><tbody>';
+  rows.forEach(function(r){h+='<tr><td class="t"><span class="id">'+r[0]+'</span>'+esc(r[1])+'</td>'+SKALA.map(function(s){return '<td><input type="radio" name="'+gk+'_'+r[0]+'" value="'+s[1]+'" aria-label="'+r[0]+': '+s[0]+'"></td>'}).join('')+'</tr>'});
+  return h+'</tbody></table>';
+}
+function head(gk,g,side){return '<div class="hd"><div><div class="school">Baltic Schule Lübeck</div><div class="ti">Erfahrungen mit dem Lernband</div></div><div class="who"><b>Bogen für '+g.name+'</b>'+side+'</div></div>'}
+function foot(g,txt,right){return '<div class="ft"><span>Baltic Schule Lübeck · Erhebung zum Schulentwicklungstag · anonym</span><span>'+right+'</span></div>'}
+function opens(g,gk,lines){return g.open.map(function(q,i){return '<div class="fr"><div class="q">'+(i+1)+'. '+esc(q)+'</div><textarea aria-label="Antwort '+(i+1)+'" style="height:'+(lines[i]||4)*9+'mm"></textarea></div>'}).join('')}
+
+
+function subBlock(gk){return '<div class="sub" id="sub_'+gk+'"><b>Online abschicken</b><p class="note">Statt Papier: Bogen oben ausfüllen und hier anonym absenden. Übertragen werden nur Antworten, Gruppe und Datum. Es werden keine Namen und keine Uhrzeiten gespeichert. Nach dem Absenden wird der Bogen geleert.</p>'
++'<input type="text" class="code" placeholder="Zugangscode (falls ausgegeben)" aria-label="Zugangscode" autocomplete="off"><button type="button" onclick="submitForm(\''+gk+'\')">Anonym abschicken</button><span class="msg" role="status"></span></div>'}
+/* ---------- Seiten ---------- */
+var doc='';
+// Deckblatt
+doc+='<section class="sec" data-sec="cover" id="cover"><div class="sheet">'
++'<div class="hd"><div><div class="school">Baltic Schule Lübeck</div><div class="ti">Erfahrungen mit dem Lernband</div></div><div class="who"><b>Auftrag und Ablauf</b>für die Steuerung<span class="tag">Entwurf zur Abstimmung</span></div></div>'
++'<h2>Wofür diese Erhebung?</h2><p class="lead">Das Lernband wird an unserer Schule erprobt, und die Jahrgänge gestalten es unterschiedlich. Für die Entscheidungen nach dem Schulentwicklungstag brauchen wir die Erfahrungen aller Beteiligten: Schüler:innen, Eltern und Kollegium. Alle drei Gruppen beantworten dieselben <b>neun Kernfragen</b> (K1–K9). Dazu kommen wenige Fragen, die nur für die jeweilige Gruppe gelten, und vier offene Fragen.</p>'
++'<div class="box"><b>Grundsätze</b><ul><li>Anonym: Es werden keine Namen erfasst. Angegeben wird nur der Jahrgang.</li><li>Neutral: Die Bögen fragen nach Wirkung und Rahmenbedingungen, nicht nach einzelnen Werkzeugen oder Konzepten.</li><li>Eindeutige Skala: 1 = trifft voll zu, 4 = trifft nicht zu, dazu „kann ich nicht beurteilen“. Die Richtung steht auf jedem Bogen.</li><li>Rückmeldung an alle: Die Ergebnisse gehen an die Gruppen zurück, die geantwortet haben.</li></ul></div>'
++'<h2>Ablauf</h2><table class="plan"><thead><tr><th style="width:8mm">Nr.</th><th>Schritt</th><th style="width:44mm">Zuständig</th><th style="width:30mm">bis</th></tr></thead><tbody>'
++[['Bögen drucken (Vorder- und Rückseite) und bereitstellen'],['Schüler:innen: Bogen in der Lernband- oder Klassenlehrerstunde ausfüllen'],['Eltern: Bogen per Elternbrief oder am Elternabend, Rücklauf in Sammelbox'],['Kollegium: Bogen in der Teamsitzung oder Dienstbesprechung ausfüllen'],['Antworten zählen und in die Auswertungsseiten eintragen'],['Ergebnisse an Klassen, Eltern und Kollegium zurückmelden'],['Entscheidungen zum Lernband auf dem Schulentwicklungstag vorbereiten']].map(function(r,i){return '<tr><td>'+(i+1)+'</td><td>'+r[0]+'</td><td><input type="text" aria-label="Zuständig Schritt '+(i+1)+'"></td><td><input type="text" aria-label="Termin Schritt '+(i+1)+'"></td></tr>'}).join('')
++'</tbody></table>'
++'<h2>Lesehilfe für die Auswertung</h2><table class="plan"><tbody>'
++'<tr><td class="g1" style="width:32mm">1,00 – 1,49</td><td>sehr positiv</td><td class="g4" style="width:32mm">2,50 – 3,00</td><td>eher negativ</td></tr>'
++'<tr><td class="g2">1,50 – 1,99</td><td>eher positiv</td><td class="g5">3,01 – 4,00</td><td>negativ</td></tr>'
++'<tr><td class="g3">2,00 – 2,49</td><td>neutral</td><td colspan="2" class="note">Bei E3 (Eltern) ist ein niedriger Wert ein Zeichen für Sorge. „Kann ich nicht beurteilen“ wird nicht mitgerechnet.</td></tr></tbody></table>'
++'<h2>Hinweise für die Durchführung</h2><div class="box"><ul><li>Jahrgang 8 hat den Projekttag statt des Lernbands: Der Bogen für Schüler:innen bezieht sich dort auf den Projekttag.</li><li>Kleine Gruppen: Auswertungen mit weniger als fünf Antworten werden nicht einzeln veröffentlicht, damit niemand erkennbar wird.</li><li>Offene Antworten werden nach Themen sortiert und nicht wörtlich mit Namen oder Klassen in Verbindung gebracht.</li></ul></div>'
++foot({}, '', 'Auftrag und Ablauf')+'</div></section>';
+
+['s','e','l'].forEach(function(gk){
+  var g=GROUP[gk], rows=KERN.map(function(k){return [k[0],k[g.idx]]}).concat(EXTRA[gk]);
+  var f='', b='';
+  if(gk==='s'){
+    f+='<p class="lead">'+g.intro+'</p>'+line('Jahrgang:','s_jg',JG,'radio')+'<p class="note" style="margin:0 0 2mm">* Jahrgang 8: Bitte den Projekttag einschätzen.</p>'
+     +'<h2>Wie siehst du das Lernband?</h2>'+scale('s',rows)
+     +line('Wie hältst du fest, was du geschafft hast?','s_doc',['Schuljahresplaner','Klassenlerntagebuch','Heft / Mappe','gar nicht','anders'])
+     +line('Wie viel Zeit brauchst du pro Woche außerhalb der Schule für Aufgaben aus dem Lernband?','s_zeit',['keine','bis 1 Std.','1–3 Std.','mehr als 3 Std.'],'radio');
+    b+='<h2>Deine Meinung in eigenen Worten</h2>'+opens(g,gk,[5,5,5,5]);
+  }
+  if(gk==='e'){
+    f+='<p class="lead">'+g.intro+'</p>'+line('Jahrgang Ihres Kindes:','e_jg',JG,'radio')
+     +'<h2>Wie sehen Sie das Lernband?</h2>'+scale('e',rows)
+     +line('Wie viel Zeit arbeitet Ihr Kind pro Woche zu Hause für das Lernband?','e_zeit',['gar nicht','bis 1 Std.','1–3 Std.','mehr als 3 Std.','weiß ich nicht'],'radio');
+    b+='<h2>Ihre Meinung in eigenen Worten</h2>'+opens(g,gk,[4,4,3,3])
+     +line('Wie möchten Sie einbezogen werden?','e_bet',['Elternabende','Umfragen wie diese','Arbeitsgruppe','Elternvertretung','anders']);
+  }
+  if(gk==='l'){
+    f+='<p class="lead">'+g.intro+'</p>'+line('Jahrgänge, in denen du am Lernband beteiligt bist:','l_jg',JG,'checkbox')+line('Rolle:','l_rolle',['Klassenlehrkraft','Fachlehrkraft im Lernband','beides','Schulleitung'],'radio')
+     +'<h2>Wie siehst du das Lernband?</h2>'+scale('l',rows)
+     +line('Wie dokumentierst du Aufgaben und Lernstände?','l_doc',['Schuljahresplaner','Klassenlerntagebuch','eigene Liste','gar nicht','anders']);
+    b+='<h2>Deine Erfahrung in eigenen Worten</h2>'+opens(g,gk,[4,4,3,3])
+     +line('Ich würde mitarbeiten an:','l_mit',['fach- und jahrgangsübergreifender Materialsichtung','Regeln und Kontrolle','Austausch zu Dokumentationswerkzeugen','Erprobung im eigenen Unterricht','zurzeit nicht']);
+  }
+  doc+='<section class="sec" data-sec="'+gk+'" id="'+gk+'"><div class="sheet">'+head(gk,g,'Vorderseite')+f+foot(g,'','bitte wenden')+'</div><div class="sheet">'+head(gk,g,'Rückseite')+b+foot(g,'','Vielen Dank!')+'</div>'+subBlock(gk)+'</section>';
+});
+
+// Auswertung
+function evTable(gk,title,rows){
+  var h='<h2>'+title+'</h2><table class="ev"><thead><tr><th class="t">Aussage</th><th>1</th><th>2</th><th>3</th><th>4</th><th>kB</th><th>n</th><th>Ø</th></tr></thead><tbody>';
+  rows.forEach(function(r){h+='<tr data-g="'+gk+'" data-id="'+r[0]+'"><td class="t"><span class="id">'+r[0]+'</span>'+esc(r[1]).slice(0,74)+(r[1].length>74?'…':'')+'</td>'+[1,2,3,4,0].map(function(v){return '<td><input type="number" min="0" data-v="'+v+'" aria-label="'+r[0]+' Anzahl '+(v||'kann ich nicht beurteilen')+'"></td>'}).join('')+'<td class="n">–</td><td class="m">–</td></tr>'});
+  return h+'</tbody></table>';
+}
+var ev='<section class="sec" data-sec="a" id="a"><div class="sheet">'
++'<div class="hd"><div><div class="school">Baltic Schule Lübeck</div><div class="ti">Auswertung</div></div><div class="who"><b>Strichliste übertragen</b>Anzahl je Kästchen eintragen</div></div>'
++'<p class="note">Zählt pro Aussage, wie oft jedes Kästchen angekreuzt wurde, und tragt die Anzahl ein. n und Mittelwert (Ø) werden berechnet, „kann ich nicht beurteilen“ (kB) zählt nicht mit. Die Eingaben bleiben in diesem Browser gespeichert.</p>'
++'<h2>Vergleich der Kernfragen</h2><table class="ev" id="vergl"><thead><tr><th class="t">Kernfrage</th><th>Schüler:innen Ø (n)</th><th>Eltern Ø (n)</th><th>Kollegium Ø (n)</th></tr></thead><tbody>'
++KERN.map(function(k){return '<tr data-k="'+k[0]+'"><td class="t"><span class="id">'+k[0]+'</span>'+esc(k[1]).slice(0,60)+(k[1].length>60?'…':'')+'</td><td data-c="s">–</td><td data-c="e">–</td><td data-c="l">–</td></tr>'}).join('')
++'</tbody></table><p class="sm">Die Kernfragen sind je Gruppe leicht umformuliert (Ich-Form, Elternsicht, Sicht der Lehrkräfte).</p>'
++'<h2>Offene Antworten: häufigste Themen</h2><table class="ev"><thead><tr><th class="t">Thema</th><th style="width:20mm">Schüler:innen</th><th style="width:20mm">Eltern</th><th style="width:20mm">Kollegium</th></tr></thead><tbody>'
++[1,2,3,4,5,6,7,8,9,10].map(function(i){return '<tr><td class="t"><input type="text" aria-label="Thema '+i+'"></td><td><input type="number" min="0" aria-label="Anzahl Schüler:innen"></td><td><input type="number" min="0" aria-label="Anzahl Eltern"></td><td><input type="number" min="0" aria-label="Anzahl Kollegium"></td></tr>'}).join('')
++'</tbody></table>'
++'<div class="ft"><span>Baltic Schule Lübeck · Erhebung zum Schulentwicklungstag</span><span>Auswertung 1</span></div></div>'
++'<div class="sheet">'+evTable('s','Schüler:innen',KERN.map(function(k){return [k[0],k[1]]}).concat(EXTRA.s))+evTable('e','Eltern',KERN.map(function(k){return [k[0],k[2]]}).concat(EXTRA.e))
++'<div class="ft"><span>Baltic Schule Lübeck · Erhebung zum Schulentwicklungstag</span><span>Auswertung 2</span></div></div>'
++'<div class="sheet">'+evTable('l','Kollegium',KERN.map(function(k){return [k[0],k[3]]}).concat(EXTRA.l))
++'<div class="ft"><span>Baltic Schule Lübeck · Erhebung zum Schulentwicklungstag</span><span>Auswertung 3</span></div></div></section>';
+var LIVE='<section class="sec" data-sec="live" id="live"><div class="live"><h2>Live-Auswertung der Online-Antworten</h2>'
++'<div id="lv_login"><p class="note">Nur für die Auswertung zuständige Personen. Anmeldung mit dem Zugang, der in Supabase angelegt wurde.</p><input type="email" id="lv_mail" autocomplete="username" placeholder="E-Mail" aria-label="E-Mail"><input type="password" id="lv_pw" autocomplete="current-password" placeholder="Passwort" aria-label="Passwort"><button type="button" onclick="lvLogin()">Anmelden</button><span class="msg" id="lv_msg" role="status"></span></div>'
++'<div id="lv_main" hidden><button type="button" onclick="lvLoad()">Aktualisieren</button> <label style="margin-left:4mm">Jahrgang: <select id="lv_jg" onchange="lvRender()"><option value="">alle</option>'+JG.map(function(j){return '<option>'+j+'</option>'}).join('')+'</select></label> <span class="msg" id="lv_status"></span><div id="lv_out"></div></div></div></section>';
+document.getElementById('doc').innerHTML=doc+ev+LIVE;
+</script>
+
+<script>
+/* ---------- Bedienung, Berechnung, Speichern ---------- */
+var LS='lb_erhebung_v1';
+function printOnly(k){if(k)document.body.setAttribute('data-only',k);else document.body.removeAttribute('data-only');window.print();setTimeout(function(){document.body.removeAttribute('data-only')},500)}
+function clearForms(){if(!confirm('Alle Antworten in den Bögen leeren? Die Auswertungszahlen bleiben erhalten.'))return;document.querySelectorAll('.sec[data-sec="s"] input,.sec[data-sec="e"] input,.sec[data-sec="l"] input').forEach(function(i){i.checked=false});document.querySelectorAll('.sec textarea').forEach(function(t){t.value=''})}
+function cls(m){return m<1.5?'g1':m<2?'g2':m<2.5?'g3':m<=3?'g4':'g5'}
+function fmt(m){return m.toFixed(2).replace('.',',')}
+var AVG={};
+function calc(){
+  AVG={};
+  document.querySelectorAll('table.ev tr[data-g]').forEach(function(tr){
+    var c={};tr.querySelectorAll('input[data-v]').forEach(function(i){c[i.dataset.v]=parseInt(i.value,10)||0});
+    var n=c[1]+c[2]+c[3]+c[4],sum=c[1]+2*c[2]+3*c[3]+4*c[4];
+    var nn=tr.querySelector('.n'),mm=tr.querySelector('.m');
+    nn.textContent=n||'–';
+    if(n){var m=sum/n;mm.textContent=fmt(m);mm.className='m '+cls(m);AVG[tr.dataset.g+'_'+tr.dataset.id]={m:m,n:n}}else{mm.textContent='–';mm.className='m'}
+  });
+  document.querySelectorAll('#vergl tr[data-k]').forEach(function(tr){
+    ['s','e','l'].forEach(function(g){var a=AVG[g+'_'+tr.dataset.k],td=tr.querySelector('[data-c="'+g+'"]');
+      if(a&&a.n>=5){td.textContent=fmt(a.m)+' ('+a.n+')';td.className=cls(a.m)}else if(a){td.textContent='n < 5';td.className=''}else{td.textContent='–';td.className=''}});
+  });
+}
+function save(){try{var d={};document.querySelectorAll('.sec[data-sec="a"] input,.sec[data-sec="cover"] input').forEach(function(i,ix){d[ix]=i.value});localStorage.setItem(LS,JSON.stringify(d))}catch(e){}}
+function load(){try{var d=JSON.parse(localStorage.getItem(LS)||'{}');document.querySelectorAll('.sec[data-sec="a"] input,.sec[data-sec="cover"] input').forEach(function(i,ix){if(d[ix]!==undefined)i.value=d[ix]})}catch(e){}}
+document.addEventListener('input',function(e){if(e.target.closest('.sec[data-sec="a"],.sec[data-sec="cover"]')){calc();save()}});
+load();calc();
+</script>
+
+<script>
+/* ---------- Supabase: Absenden und Live-Auswertung ---------- */
+var SB_URL='https://oyyhzzvodrkqfbxlwwuv.supabase.co';
+var SB_KEY='HIER_PUBLISHABLE_KEY_EINTRAGEN'; /* Dashboard → Project Settings → API Keys → Publishable key (sb_publishable_…) bzw. anon key */
+var SB_OK=SB_KEY.indexOf('HIER_')!==0;
+function sbHead(tok){var h={'apikey':SB_KEY,'Content-Type':'application/json'};if(tok)h['Authorization']='Bearer '+tok;return h}
+
+function collect(gk){
+  var sec=document.querySelector('.sec[data-sec="'+gk+'"]'),a={};
+  sec.querySelectorAll('input').forEach(function(i){
+    if(!i.name||!i.checked)return;
+    var v=i.getAttribute('value');
+    if(v===null){var l=i.closest('label');v=l?l.textContent.trim():''}
+    if(/^[sel]_[A-Z]\d+$/.test(i.name))v=Number(v);
+    if(i.type==='checkbox'){(a[i.name]=a[i.name]||[]).push(v)}else a[i.name]=v;
+  });
+  sec.querySelectorAll('textarea').forEach(function(t,ix){var x=t.value.trim();if(x)a['o'+(ix+1)]=x.slice(0,3000)});
+  return a;
+}
+function submitForm(gk){
+  var box=document.getElementById('sub_'+gk),msg=box.querySelector('.msg'),btn=box.querySelector('button');
+  function say(t,c){msg.textContent=t;msg.className='msg '+(c||'')}
+  if(!SB_OK){say('Online-Versand ist noch nicht eingerichtet.','err');return}
+  var a=collect(gk),hasScale=Object.keys(a).some(function(k){return /^[sel]_[A-Z]\d+$/.test(k)});
+  if(!hasScale){say('Bitte mindestens eine Aussage ankreuzen.','err');return}
+  if(gk!=='l'&&!a[gk+'_jg']){say('Bitte den Jahrgang angeben.','err');return}
+  btn.disabled=true;say('Wird gesendet …');
+  fetch(SB_URL+'/rest/v1/rpc/antwort_abschicken',{method:'POST',headers:sbHead(),body:JSON.stringify({p_gruppe:gk,p_antworten:a,p_code:box.querySelector('.code').value})})
+  .then(function(r){return r.ok?null:r.text().then(function(t){throw new Error(t)})})
+  .then(function(){
+    document.querySelectorAll('.sec[data-sec="'+gk+'"] input[type=radio],.sec[data-sec="'+gk+'"] input[type=checkbox]').forEach(function(i){i.checked=false});
+    document.querySelectorAll('.sec[data-sec="'+gk+'"] textarea').forEach(function(t){t.value=''});
+    say('Danke! Deine Antworten sind angekommen.','ok');setTimeout(function(){btn.disabled=false},4000);
+  }).catch(function(e){btn.disabled=false;say(/Zugangscode/.test(e.message)?'Zugangscode falsch.':'Senden fehlgeschlagen. Bitte später erneut versuchen.','err')});
+}
+
+/* Live-Auswertung */
+var LVTOK=null,LV=[];
+var TITLES={s_jg:'Jahrgang',e_jg:'Jahrgang des Kindes',l_jg:'Jahrgänge',s_doc:'Wie festhalten, was geschafft ist',s_zeit:'Zeit pro Woche außerhalb der Schule',e_zeit:'Zeit pro Woche zu Hause',e_bet:'Gewünschte Einbeziehung',l_rolle:'Rolle',l_doc:'Dokumentation',l_mit:'Mitarbeit an'};
+var OPTN={s:['s_jg','s_doc','s_zeit'],e:['e_jg','e_zeit','e_bet'],l:['l_jg','l_rolle','l_doc','l_mit']};
+function lvMsg(id,t,c){var m=document.getElementById(id);m.textContent=t;m.className='msg '+(c||'')}
+function lvLogin(){
+  if(!SB_OK){lvMsg('lv_msg','Supabase-Schlüssel fehlt in der Datei.','err');return}
+  lvMsg('lv_msg','Anmeldung …');
+  fetch(SB_URL+'/auth/v1/token?grant_type=password',{method:'POST',headers:sbHead(),body:JSON.stringify({email:document.getElementById('lv_mail').value.trim(),password:document.getElementById('lv_pw').value})})
+  .then(function(r){if(!r.ok)throw 0;return r.json()})
+  .then(function(d){LVTOK=d.access_token;document.getElementById('lv_pw').value='';document.getElementById('lv_login').hidden=true;document.getElementById('lv_main').hidden=false;lvLoad()})
+  .catch(function(){lvMsg('lv_msg','Anmeldung fehlgeschlagen.','err')});
+}
+function lvLoad(){
+  lvMsg('lv_status','Lade …');var all=[];
+  (function page(from){
+    var h=sbHead(LVTOK);h['Range-Unit']='items';h['Range']=from+'-'+(from+999);
+    fetch(SB_URL+'/rest/v1/antworten?select=gruppe,tag,antworten&order=id',{headers:h}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(rows){
+      all=all.concat(rows);if(rows.length===1000)return page(from+1000);
+      LV=all;lvMsg('lv_status','Stand '+new Date().toLocaleTimeString('de-DE')+' · '+LV.length+' Antworten gesamt','ok');lvRender();
+    }).catch(function(){lvMsg('lv_status','Laden fehlgeschlagen (nicht berechtigt oder Sitzung abgelaufen).','err')});
+  })(0);
+}
+function jgMatch(v,j){return Array.isArray(v)?v.indexOf(j)>-1:v===j}
+function stat(rows,key){
+  var c=[0,0,0,0,0];rows.forEach(function(r){var v=r.antworten[key];if(typeof v==='number'&&v>=0&&v<=4)c[v]++});
+  var n=c[1]+c[2]+c[3]+c[4];return {c:c,n:n,m:n?(c[1]+2*c[2]+3*c[3]+4*c[4])/n:0}
+}
+function lvRender(){
+  var jg=document.getElementById('lv_jg').value,G={},out='';
+  ['s','e','l'].forEach(function(gk){G[gk]=LV.filter(function(r){return r.gruppe===gk&&(!jg||jgMatch(r.antworten[gk+'_jg'],jg))})});
+  out+='<h2>Vergleich der Kernfragen'+(jg?' (Jahrgang '+jg+')':'')+'</h2><table class="ev"><thead><tr><th class="t">Kernfrage</th><th>Schüler:innen Ø (n)</th><th>Eltern Ø (n)</th><th>Kollegium Ø (n)</th></tr></thead><tbody>';
+  KERN.forEach(function(k){out+='<tr><td class="t"><span class="id">'+k[0]+'</span>'+esc(k[1])+'</td>'+['s','e','l'].map(function(gk){var t=stat(G[gk],gk+'_'+k[0]);return t.n>=5?'<td class="'+cls(t.m)+'">'+fmt(t.m)+' ('+t.n+')</td>':'<td>'+(t.n?'n &lt; 5':'–')+'</td>'}).join('')+'</tr>'});
+  out+='</tbody></table>';
+  ['s','e','l'].forEach(function(gk){
+    var g=GROUP[gk],rows=G[gk];out+='<h2>'+g.name+': '+rows.length+' Antworten</h2>';
+    if(rows.length<5){out+='<p class="note">Weniger als 5 Antworten. Zum Schutz der Anonymität wird nichts angezeigt.</p>';return}
+    out+='<table class="ev"><thead><tr><th class="t">Aussage</th><th>1</th><th>2</th><th>3</th><th>4</th><th>kB</th><th>n</th><th>Ø</th></tr></thead><tbody>';
+    KERN.map(function(k){return [k[0],k[g.idx]]}).concat(EXTRA[gk]).forEach(function(it){
+      var t=stat(rows,gk+'_'+it[0]),ok=t.n>=5;
+      out+='<tr><td class="t"><span class="id">'+it[0]+'</span>'+esc(it[1])+'</td>'+[1,2,3,4,0].map(function(v){return '<td>'+(ok?t.c[v]:'')+'</td>'}).join('')+'<td>'+t.n+'</td><td class="m '+(ok?cls(t.m):'')+'">'+(ok?fmt(t.m):'n &lt; 5')+'</td></tr>'});
+    out+='</tbody></table><h2 style="font-size:9.6pt">Weitere Angaben</h2>';
+    OPTN[gk].forEach(function(nm){var cnt={},tot=0;rows.forEach(function(r){var v=r.antworten[nm];if(v===undefined)return;(Array.isArray(v)?v:[v]).forEach(function(x){cnt[x]=(cnt[x]||0)+1});tot++});
+      var keys=Object.keys(cnt);if(!keys.length)return;
+      out+='<p class="opt"><b>'+esc(TITLES[nm])+':</b> '+keys.map(function(x){return cnt[x]>=5||nm.slice(2)==='jg'?esc(x)+' ('+cnt[x]+')':esc(x)+' (&lt; 5)'}).join(' · ')+'</p>'});
+    out+='<h2 style="font-size:9.6pt">Offene Antworten</h2>';
+    g.open.forEach(function(q,i){var t=rows.map(function(r){return r.antworten['o'+(i+1)]}).filter(Boolean);
+      out+='<div class="fr"><div class="q">'+(i+1)+'. '+esc(q)+' <span class="sm">('+t.length+')</span></div><ul>'+t.map(function(x){return '<li>'+esc(x)+'</li>'}).join('')+'</ul></div>'});
+  });
+  document.getElementById('lv_out').innerHTML=out;
+}
+</script>
+</body>
+</html>
